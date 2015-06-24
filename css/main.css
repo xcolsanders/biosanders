@@ -1,0 +1,50 @@
+* {
+	color: #7b85ad;
+}
+
+/* Source: http://www.w3schools.com/css/css3_gradients.asp */
+body {
+	background: -webkit-linear-gradient(#e7e7e7, #959393, #e7e7e7); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e7e7e7, #959393, #e7e7e7); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e7e7e7, #959393, #e7e7e7); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e7e7e7, #959393, #e7e7e7); /* Standard syntax */
+}
+
+footer p {
+	color: #07113A;
+}
+
+.form-control {
+	color: #07113A;
+}
+
+hr,.jumbotron>hr {
+	color: #e7e7e7;
+}
+
+.jumbotron {
+	background: #07113a;
+	opacity: 0.8; 
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background: #172457;
+	opacity: 0.8; 
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #7b85ad;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #07113a;
+}

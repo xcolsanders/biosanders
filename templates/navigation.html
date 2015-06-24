@@ -1,0 +1,50 @@
+<div class='header'>
+	<nav class='navbar navbar-default'>
+		<div class='container-fluid'>
+			<!-- Hamburger menu -->
+			<div class='navbar-header'>
+				<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+			</div>
+
+			<!-- Navigation menu -->
+			<div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+				<ul class='nav navbar-nav'>
+					<li id="index"><a href='index.php'>About</a></li>
+					<li id="projects"><a href='projects.php'>Projects</a></li>
+					<li id="contact"><a href='contact.php'>Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</div>
+
+<?php
+	// Add active class to nav link of current page
+	$page = basename($_SERVER['PHP_SELF']);
+
+	switch ($page) {
+		case 'index.php':
+			echo '<script>';
+			echo '$("#index").addClass("active");';
+			echo '</script>';
+			break;
+		case 'projects.php':
+			echo '<script>';
+			echo '$("#projects").addClass("active");';
+			echo '</script>';
+			break;
+		case 'contact.php':
+			echo '<script>';
+			echo '$("#contact").addClass("active");';
+			echo '</script>';
+			break;
+		default:
+			echo '<script>';
+			echo '$("#index").addClass("active");';
+			echo '</script>';
+	}
+?>
